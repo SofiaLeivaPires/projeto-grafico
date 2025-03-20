@@ -1,0 +1,65 @@
+## COMANDOS DE NAVEGAÇÃO
+
+dir - lista os diretórios da raiz
+ctrl + l - limpar os códigos
+cd + "nome da pasta" - entra no diretório
+cd .. - volta uma pasta
+cd ~ - volta pra raiz
+cd documents/arduino - entra na ultima pasta
+
+## COMANDOS DE CRIAÇÃO E EDIÇÃO
+
+mkdir "teste"- cria uma pasta/diretório
+mv "teste alunosta" - renomeia a pasta
+rmdir "alunos ta" - apaga a pasta, não funciona se tiver arquivos
+rm -d "teste" - apaga a pasta também (é bom colocar aspas se houver espaços)
+rm -r - apaga a pasta mesmo com arquivos
+touch "teste.html" - cria arquivo de acordo com o tipo
+
+mv ~/documents/teste/index.html/teste.html ~/documents/teste - move a pasta teste.html para a teste
+
+modelo: "pasta raiz" "pasta origem"
+
+code . - abre o repositório do projeto
+code index.html - abre no visual
+ctrl + insert - copia no git
+
+
+## GITS
+git init - inicializa
+git add - entrar na stage
+git status - mostra o stauts das coisas
+
+=====================================
+antes do add está só local
+a apartir do add entra na stage
+que permite o acesso de versionamento
+
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   form01.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        form02.html
+
+Nesse caso o form01 está na stage, enquanto o form02 não está ainda.
+=====================================
+
+git reset "nome arquivo" - desfaz o que o git add . faz
+git commit -m  "Projeto Inicial - Formulário HTML"
+shift + insert - cola
+git log - consegue ver o que está na commit
+git remote add origin "link:" https://github.com/SofiaLeivaPires/projeto-grafico.git
+git remote -v - ver o link que acabei de inserir
+git push -u origin main
+git push -f origin main - força o documento a subir
+
+
+
+
