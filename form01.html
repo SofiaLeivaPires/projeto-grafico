@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- action - recebe o endereço do arquivo/
+    página para onde os dados serão enviados.
+    method - determina como os dados serão enviados. -->
+    <form action="#" method="post">
+    <!-- 1 Formulário -->
+        <label for="name">Nome</label>
+        <input type="text" name="name" id="name" placeholder="Nome e sobrenome " maxlength="30" required autofocus >
+        <!-- Maxlength restrição com 30 caracteres -->
+        <br><br>
+        <!-- E-mail -->
+        <label for="email">E-mail</label>
+        <input type="email" name="email" id="email" maxlength="50" required autocomplete 
+        placeholder="email@email.com">
+        <!-- autocomplete: Quando o usuário preenche o campo e envia o formulário,
+        os dados ficam salvos, assim, caso ele queira enviar o formulário novamente,
+        não é necessário redigitar todos os dados. -->
+        <br></br>
+        <!--Telefone -->
+        <label for="tel">Telefone</label>
+        <input type="tel" name="tel" id="tel" maxlength="11" required autocomplete="on" 
+        placeholder="(XX) XXXX-XXXX">
+        <!-- ALT SHIFT S - IDENTAÇÃO -->
+        <!--deepl - tradutor  -->
+        <!--Curriculo -->
+        <label for="curriculum">Currículo</label>
+        <input type="file" name="curriculum" id="curriculum">
+        <br><br>
+
+        <!-- Mensagem -->
+        <div> <label for="message">Mensagem</label> </div>
+        <textarea name="message" id="message" rows="5" cols="20" 
+        placeholder="Digite aqui sua mensagem" required></textarea>
+    </form>
+</body>
+</html>
